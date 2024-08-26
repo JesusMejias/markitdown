@@ -1,8 +1,24 @@
-# React + Vite
+# markitdown
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+markitdown is a simple, web-based markdown editor.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Create and edit markdown files
+- Preview markdown in real-time
+- Save and download markdown files
+
+## Installation
+
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the application
+
+## Usage
+
+1. Open the application in your web browser
+2. Create or open a markdown file
+3. Edit the markdown content
+4. Preview the rendered markdown
