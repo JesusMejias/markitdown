@@ -26,8 +26,8 @@ function App() {
           <div className="side">Preview</div>
         </div>
         <div className="bottom">
-          <div className="side"><textarea value={markdown} placeholder="Enter markdown text here." onChange={(e) => setMarkdown(e.target.value)}></textarea><div className="options"><button onClick={() => navigator.clipboard.writeText(markdown)}>Copy Markdown</button><button onClick={pasteText}>Paste</button><button onClick={() => setMarkdown('')}>Clear</button></div></div>
-          <div className="side"><div className="markdown"><Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown></div><div className="options"><button onClick={copyRichText}>Copy Rich Text</button><button onClick={() => navigator.clipboard.writeText(document.querySelector('.markdown').innerText)}>Copy Plain Text</button></div></div>
+          <div className="side"><textarea value={markdown} placeholder="Enter markdown text here." onChange={(e) => setMarkdown(e.target.value)}></textarea><div className="options"><button onClick={() => navigator.clipboard.writeText(markdown)} disabled={markdown === ''}>Copy Markdown</button><button onClick={pasteText}>Paste</button><button onClick={() => setMarkdown('')} disabled={markdown === ''}>Clear</button></div></div>
+          <div className="side"><div className="markdown"><Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown></div><div className="options"><button onClick={copyRichText} disabled={markdown === ''}>Copy Rich Text</button><button onClick={() => navigator.clipboard.writeText(document.querySelector('.markdown').innerText)} disabled={markdown === ''}>Copy Plain Text</button></div></div>
         </div>
       </div>
       <footer>Developed and <a href="https://github.com/JesusMejias/markitdown" target="_blank">open sourced</a> by <a href="https://jesusmejias.com/" target="_blank">Jesús Mejías</a></footer>
