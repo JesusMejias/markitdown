@@ -33,6 +33,7 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, .4);
   padding-bottom: .1rem;
   transition: .2s ease border-color;
+  text-decoration: none;
   &:hover {
     border-color: black;
   }
